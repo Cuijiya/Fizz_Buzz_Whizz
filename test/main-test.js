@@ -1,8 +1,43 @@
 'use strict';
 
 describe('getResult',() => {
-    it('when number has 3,should return fizz',()=>{
-        let num=13
+    it('when number has 3 and is not times of 5,should return fizz',()=>{
+        let num=30
+        var actualResult=getResult(num)
+        let expectedResult='fizz'
+        expect(actualResult).toEqual(expectedResult)
+    })
+
+    it('when number has 3 and is not times of 7,should return fizz',()=>{
+        let num=35
+        var actualResult=getResult(num)
+        let expectedResult='fizz'
+        expect(actualResult).toEqual(expectedResult)
+    })
+
+    it('when number has 3 and is not times of 15,should return fizz',()=>{
+        let num=30
+        var actualResult=getResult(num)
+        let expectedResult='fizz'
+        expect(actualResult).toEqual(expectedResult)
+    })
+
+    it('when number has 3 and is not times of 35,should return fizz',()=>{
+        let num=35
+        var actualResult=getResult(num)
+        let expectedResult='fizz'
+        expect(actualResult).toEqual(expectedResult)
+    })
+
+    it('when number has 3 and is not times of 21,should return fizz',()=>{
+        let num=63
+        var actualResult=getResult(num)
+        let expectedResult='fizz'
+        expect(actualResult).toEqual(expectedResult)
+    })
+
+    it('when number has 3 and is not times of 105,should return fizz',()=>{
+        let num=315
         var actualResult=getResult(num)
         let expectedResult='fizz'
         expect(actualResult).toEqual(expectedResult)
