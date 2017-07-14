@@ -2,7 +2,7 @@
 
 describe('getResult',() => {
     it('when number has 3,should return fizz',()=>{
-        let num=30
+        let num=13
         var actualResult=getResult(num)
         let expectedResult='fizz'
         expect(actualResult).toEqual(expectedResult)
@@ -16,7 +16,7 @@ describe('getResult',() => {
     })
 
     it('when number is times of 15,should return fizzBuzz',()=>{
-        let num=15
+        let num=60
         var actualResult=getResult(num)
         let expectedResult='fizzBuzz'
         expect(actualResult).toEqual(expectedResult)
